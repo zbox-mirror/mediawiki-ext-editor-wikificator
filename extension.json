@@ -1,0 +1,59 @@
+{
+  "name": "MW_EXT_EditorWikificator",
+  "version": "1.0.0",
+  "author": [
+    "[https://z17.dev/ z17 Dev]",
+    "[https://z17.cx/ z17 CX]",
+    "..."
+  ],
+  "url": "https://github.com/cmfstore",
+  "descriptionmsg": "mw-ext-editor-wikificator-desc",
+  "license-name": "[https://choosealicense.com/licenses/mit/ MIT]",
+  "type": "parserhook",
+  "require": {
+    "MediaWiki": ">= 1.31.0",
+    "extensions": {
+      "MW_EXT_Kernel": "*"
+    }
+  },
+  "AutoloadClasses": {
+    "MediaWiki\\Extension\\CMFStore\\MW_EXT_EditorWikificator": "MW_EXT_EditorWikificator.class.php"
+  },
+  "Hooks": {
+    "BeforePageDisplay": [
+      "MediaWiki\\Extension\\CMFStore\\MW_EXT_EditorWikificator::onBeforePageDisplay"
+    ]
+  },
+  "MessagesDirs": {
+    "MW_EXT_EditorWikificator": [
+      "i18n"
+    ]
+  },
+  "ResourceModules": {
+    "ext.mw.editor-wikificator": {
+      "scripts": [
+        "scripts/main.min.js"
+      ],
+      "position": "bottom",
+      "targets": [
+        "desktop",
+        "mobile"
+      ]
+    },
+    "ext.mw.editor-wikificator.styles": {
+      "styles": [
+        "styles/theme.css"
+      ],
+      "position": "top",
+      "targets": [
+        "desktop",
+        "mobile"
+      ]
+    }
+  },
+  "ResourceFileModulePaths": {
+    "localBasePath": "modules",
+    "remoteExtPath": "MW_EXT_EditorWikificator/modules"
+  },
+  "manifest_version": 2
+}
