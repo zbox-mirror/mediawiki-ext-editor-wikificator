@@ -1,5 +1,5 @@
 {
-  "name": "cmfstore/mediawiki-editor-wikificator",
+  "name": "cmfstore/mediawiki-ext-editor-wikificator",
   "type": "mediawiki-extension",
   "description": "MediaWiki Editor: Wikificator.",
   "license": "MIT",
@@ -24,13 +24,13 @@
     }
   ],
   "support": {
-    "issues": "https://github.com/cmfstore/mediawiki-editor-wikificator/issues",
-    "source": "https://github.com/cmfstore/mediawiki-editor-wikificator"
+    "issues": "https://github.com/cmfstore/mediawiki-ext-editor-wikificator/issues",
+    "source": "https://github.com/cmfstore/mediawiki-ext-editor-wikificator"
   },
   "require": {
     "php": ">=7.2",
     "composer/installers": "^1.0.1",
-    "cmfstore/mediawiki-kernel": "*"
+    "cmfstore/mediawiki-ext-kernel": "*"
   },
   "autoload": {
     "classmap": [
